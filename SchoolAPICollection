@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "0183b15b-577c-42f9-8856-2c8141001a3b",
+		"name": "SchoolAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4873129"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7230/api/login/getToken?userName=JuaQui&Password=jH6tpvNICok1N30gprgEFA==",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"login",
+						"getToken"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "JuaQui"
+						},
+						{
+							"key": "Password",
+							"value": "jH6tpvNICok1N30gprgEFA=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7230/api/login/getPass?password=jQuirozH",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"login",
+						"getPass"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "jQuirozH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllStudents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1YVF1aSIsIm5iZiI6MTcxMzcxMTY3NCwiZXhwIjoxNzEzNzExNzk0LCJpYXQiOjE3MTM3MTE2NzR9.7ymf6M5tKqHevjpD6sa7iJlrzCBHAYHKTKt4cMfRoVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7230/api/Student/getAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"Student",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1YVF1aSIsIm5iZiI6MTcxMzcxMTY3NCwiZXhwIjoxNzEzNzExNzk0LCJpYXQiOjE3MTM3MTE2NzR9.7ymf6M5tKqHevjpD6sa7iJlrzCBHAYHKTKt4cMfRoVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7230/api/Student/get?id=4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"Student",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1YVF1aSIsIm5iZiI6MTcxMzcxMTY3NCwiZXhwIjoxNzEzNzExNzk0LCJpYXQiOjE3MTM3MTE2NzR9.7ymf6M5tKqHevjpD6sa7iJlrzCBHAYHKTKt4cMfRoVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":  4,\r\n    \"Name\":\"Pedro Luis\",\r\n    \"Adress\":\"No la se\",\r\n    \"Document\":\"12345\",\r\n    \"Phone\":\"3127569866\",\r\n    \"GradeId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7230/api/Student/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"Student",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1YVF1aSIsIm5iZiI6MTcxMzcxMTY3NCwiZXhwIjoxNzEzNzExNzk0LCJpYXQiOjE3MTM3MTE2NzR9.7ymf6M5tKqHevjpD6sa7iJlrzCBHAYHKTKt4cMfRoVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"David Henao\",\r\n    \"Adress\":\"Calle 70\",\r\n    \"Document\":\"1221212\",\r\n    \"Phone\":\"3117458556\",\r\n    \"GradeId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7230/api/Student/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"Student",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteStudent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Ikp1YVF1aSIsIm5iZiI6MTcxMzcxMTY3NCwiZXhwIjoxNzEzNzExNzk0LCJpYXQiOjE3MTM3MTE2NzR9.7ymf6M5tKqHevjpD6sa7iJlrzCBHAYHKTKt4cMfRoVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7230/api/Student/delete?id=8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7230",
+					"path": [
+						"api",
+						"Student",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
