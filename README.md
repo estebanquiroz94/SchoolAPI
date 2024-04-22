@@ -9,5 +9,5 @@ Prueba técnica
 5.Al ejecutar el proyecto, la API cargará la interfaz Swagger donde se evidencian los métodos disponibles por el controlador Student con sus respectivos verbos y parámetros requeridos. 
 6.Se comparte colección de postman SchoolAPICollection donde se encuentran las peticiones para consumir la API. 
 7. Se implentó proceso de Autenticación mediante Bearer Token, el cual se obtiene desde la petición "GetToken" con los valores brindados. Actualmente se hace la autenticación contra los valores del Appsettings.
-8.Para activar la autenticación es necesario desdocumentar la linea 7 del archivo StudenController.cs
+8.Para activar la autenticación es necesario desdocumentar la linea 7 del archivo StudenController.cs y el Token generado se debe agregar a la petición que se vaya realizar desde el apartado de "Authorization" seleccionando la opción "Bearer Token" 
 9. Se implementó patrón Repository para el acceso a Datos
